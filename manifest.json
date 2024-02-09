@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Quick Notes",
+    "version": "1.0",
+    "description": "A simple note-taking extension",
+    "permissions": ["storage"],
+    "background":
+    {
+        "service_worker": "background.js"
+    },
+    "action":
+    {
+        "default_title": "My Notes",
+        "default_popup": "popup.html"
+    }
+}

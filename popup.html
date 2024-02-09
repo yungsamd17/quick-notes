@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quick Notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="popup.html" target="_blank" title="Open Quick Notes in new tab"><i class="fa-regular fa-file-lines"></i>&nbsp;Quick Notes</a></h1>
+        <div id="buttons-container">
+            <button id="new-note-button"><i class="fa-solid fa-plus"></i> New Note</button>
+            <button id="saved-notes-button"><i class="fa-regular fa-folder-open"></i> Saved Notes</button>
+        </div>
+    </header>
+    <input type="text" id="note-title" placeholder="Note Title">
+    <textarea id="note-content" rows="18" placeholder="Write your note here..."></textarea>
+    <button id="save-button"><i class="fa-solid fa-floppy-disk"></i> Save</button>
+    <div id="modal-container" class="hidden">
+        <div class="modal-body">
+            <div id="modal-header">
+                <h2><i class="fa-regular fa-folder-open"></i> Saved Notes</h2>
+                <div id="modal-close-button">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div id="modal-content">
+                <ul id="saved-notes-list"></ul>
+                <div class="modal-content-buttons">
+                    <button id="delete-all-notes-button"><i class="fa-solid fa-trash"></i> Delete All</button>
+                    <button id="export-button"><i class="fa-solid fa-download"></i> Export Notes</button>
+                    <button id="import-button"><i class="fa-solid fa-upload"></i> Import Notes</button>
+                    <input type="file" id="import-file" accept=".json" style="display: none;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
