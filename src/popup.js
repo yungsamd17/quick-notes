@@ -61,7 +61,7 @@ function saveNote(note) {
         notes.push(note);
         chrome.storage.sync.set({ notes }, () => {
             console.log('Note saved successfully');
-            displaySavedNotes(); // Update list after saving
+            displaySavedNotes();
         });
     });
 }
@@ -121,7 +121,6 @@ function displaySavedNotes() {
 
                 deleteButton.addEventListener('click', () => {
                     showConfirmDialog(note.title, () => {
-                        // Implement logic to delete the note from storage
                         chrome.storage.sync.get('notes', (data) => {
                             const notes = data.notes || [];
                             const newNotes = notes.filter((savedNote) => savedNote.id !== note.id);
@@ -129,8 +128,7 @@ function displaySavedNotes() {
                                 // Update the savedNotesList after deletion
                                 displaySavedNotes();
 
-                                // Don't load the deleted note's content
-                                // Clear input fields instead
+                                // Don't load the deleted note's content, clear input fields instead
                                 document.getElementById('note-title').value = '';
                                 document.getElementById('note-content').value = '';
                             });
@@ -149,7 +147,6 @@ function displaySavedNotes() {
 }
 
 function showConfirmDialog(noteTitle, onConfirm) {
-    // Use browser alert or a custom dialog element
     if (confirm(`Are you sure you want to delete the note "${noteTitle}"?`)) {
         onConfirm();
     }
@@ -233,7 +230,7 @@ function decodeImportedNotes(importedNotes) {
         content: decodeURIComponent(escape(atob(note.content))),
     }));
 
-    // Save decoded notes to Chrome storage or perform any other action
+    // Save decoded notes to Chrome storage
     chrome.storage.sync.set({ notes: decodedNotes }, () => {
         console.log('Notes imported successfully');
         displaySavedNotes(); // Update list after importing notes
