@@ -1,16 +1,20 @@
 {
     "manifest_version": 3,
     "name": "Quick Notes",
-    "version": "1.0",
     "description": "A simple note-taking extension",
-    "permissions": ["storage"],
-    "background":
+    "version": "1.1",
+    "author": "Sam @yungsamd17",
+    "homepage_url": "https://github.com/yungsamd17/quick-notes",
+    "icons":
     {
-        "service_worker": "background.js"
+        "16": "src/assets/icon-16.png",
+        "48": "src/assets/icon-48.png",
+        "128": "src/assets/icon-128.png"
     },
+    "permissions": ["storage"],
     "action":
     {
-        "default_title": "My Notes",
+        "default_title": "Quick Notes",
         "default_popup": "popup.html"
     }
 }

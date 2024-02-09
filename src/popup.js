@@ -89,8 +89,11 @@ function displaySavedNotes() {
             document.getElementById('delete-all-notes-button').style.display = 'none';
             document.getElementById('export-button').style.display = 'none';
         } else {
+            // Reverse the order of notes to display newest notes first
+            const reversedNotes = notes.slice().reverse();
+            
             // Display saved notes
-            notes.forEach((note) => {
+            reversedNotes.forEach((note) => {
                 const listItem = document.createElement('li');
                 const noteTitle = document.createElement('b');
                 const noteDate = document.createElement('span');

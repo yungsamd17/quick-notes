@@ -13,6 +13,22 @@ body {
     background-color: #18181b;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(56, 56, 63, 0.4);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #38383f;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(253, 233, 87, 1.0);;
+}
+
 ::selection {
     background-color: rgba(175.31, 175.31, 175.31, 0.4);;
     color: #fff;
@@ -39,6 +55,10 @@ h1 a {
 
 h1 a:hover {
     text-decoration: underline;
+}
+
+h1 a i {
+    color: #fde957;
 }
 
 #buttons-container {
@@ -117,7 +137,8 @@ li.selected {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,7 +164,7 @@ li.selected {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
 }
 
 #modal-header h2 {
@@ -183,6 +204,8 @@ li.selected {
     padding: 0;
     margin: 0;
     margin-bottom: 15px;
+    max-height: 205px;
+    overflow-y: auto;
 }
 
 #saved-notes-list li {

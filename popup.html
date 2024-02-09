@@ -3,11 +3,11 @@
 <head>
     <title>Quick Notes</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
     <header>
-        <h1><a href="popup.html" target="_blank" title="Open Quick Notes in new tab"><i class="fa-regular fa-file-lines"></i>&nbsp;Quick Notes</a></h1>
+        <h1><a href="popup.html" target="_blank" title="Open Quick Notes in new tab"><i class="fa-solid fa-note-sticky"></i>&nbsp;Quick Notes</a></h1>
         <div id="buttons-container">
             <button id="new-note-button"><i class="fa-solid fa-plus"></i> New Note</button>
             <button id="saved-notes-button"><i class="fa-regular fa-folder-open"></i> Saved Notes</button>
@@ -27,7 +27,7 @@
             <div id="modal-content">
                 <ul id="saved-notes-list"></ul>
                 <div class="modal-content-buttons">
-                    <button id="delete-all-notes-button"><i class="fa-solid fa-trash"></i> Delete All</button>
+                    <button id="delete-all-notes-button"><i class="fa-solid fa-trash"></i> Delete All Notes</button>
                     <button id="export-button"><i class="fa-solid fa-download"></i> Export Notes</button>
                     <button id="import-button"><i class="fa-solid fa-upload"></i> Import Notes</button>
                     <input type="file" id="import-file" accept=".json" style="display: none;">
@@ -35,6 +35,6 @@
             </div>
         </div>
     </div>
-    <script src="popup.js"></script>
+    <script src="src/popup.js"></script>
 </body>
 </html>
