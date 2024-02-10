@@ -45,7 +45,7 @@ header {
 
 h1 {
     font-size: 24px;
-    margin: 10px 0;
+    margin: 12px 0 13px 0;
     color: #fff;
     display: flex;
     align-items: center;
@@ -87,6 +87,10 @@ button {
 
 button:hover {
     background-color: #484851;
+}
+
+button:active {
+    background-color: #54545f;
 }
 
 #note-title,
