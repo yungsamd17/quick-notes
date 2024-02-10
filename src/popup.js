@@ -91,7 +91,7 @@ function displaySavedNotes() {
         } else {
             // Reverse the order of notes to display newest notes first
             const reversedNotes = notes.slice().reverse();
-            
+
             // Display saved notes
             reversedNotes.forEach((note) => {
                 const listItem = document.createElement('li');

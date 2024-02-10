@@ -17,20 +17,23 @@ body {
 ::-webkit-scrollbar {
     width: 10px;
 }
+
 ::-webkit-scrollbar-track {
     background: rgba(56, 56, 63, 0.4);
     border-radius: 5px;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #38383f;
     border-radius: 5px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(253, 233, 87, 1.0);;
+    background: rgba(253, 233, 87, 1.0);
 }
 
 ::selection {
-    background-color: rgba(175.31, 175.31, 175.31, 0.4);;
+    background-color: rgba(175.31, 175.31, 175.31, 0.4);
     color: #fff;
 }
 
@@ -42,7 +45,7 @@ header {
 
 h1 {
     font-size: 24px;
-    margin: 15px 0;
+    margin: 10px 0;
     color: #fff;
     display: flex;
     align-items: center;
@@ -67,8 +70,10 @@ h1 a i {
 }
 
 #buttons-container button {
-    height: 70%;
+    height: 60%;
     margin-left: 10px;
+    display: flex;
+    align-items: center;
 }
 
 button {
@@ -77,6 +82,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     background-color: #38383f;
+    border: 1px solid #54545f;
 }
 
 button:hover {
@@ -186,12 +192,13 @@ li.selected {
 #modal-close-button:hover {
     color: #fff;
 }
+
 .modal-content-buttons {
     display: flex;
 }
 
 .modal-content-buttons button {
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 #delete-all-notes-button,
@@ -232,7 +239,6 @@ li.selected {
     float: right;
     margin-left: 5px;
     opacity: 0;
-    transition: opacity 0.1s ease-in-out;
 }
 
 #saved-notes-list li:hover button {
