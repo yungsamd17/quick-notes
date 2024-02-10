@@ -7,7 +7,7 @@ A simple note-taking Chrome extension
 - Export and Import notes
 - Delete all notes button
 
-![quick-notes-2](https://github.com/yungsamd17/quick-notes/assets/64147848/014bff2c-e02a-4e80-8317-45378ab4d5df)
+![quick-notes-2](https://github.com/yungsamd17/quick-notes/assets/64147848/9405d933-d8f8-408f-8a7b-6b6fb7d3748b)
 
 
 ## [**Download**](https://github.com/yungsamd17/quick-notes/releases/latest/download/quick-notes.zip) *and follow instructions on how to install*
