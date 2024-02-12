@@ -29,7 +29,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(253, 233, 87, 1.0);
+    background: #fde957;
 }
 
 ::selection {
@@ -58,6 +58,11 @@ h1 a {
 
 h1 a:hover {
     text-decoration: underline;
+}
+
+h1 a:focus-visible {
+    outline: 2px solid #fde957;
+    border-radius: 4px;
 }
 
 h1 a i {
@@ -89,6 +94,10 @@ button:hover {
     background-color: #484851;
 }
 
+button:focus-visible {
+    outline: 2px solid #fde957;
+}
+
 button:active {
     background-color: #54545f;
 }
@@ -106,7 +115,7 @@ button:active {
 
 #note-title:focus,
 #note-content:focus {
-    outline: 2px solid #fff;
+    outline: 2px solid #fde957;
 }
 
 
